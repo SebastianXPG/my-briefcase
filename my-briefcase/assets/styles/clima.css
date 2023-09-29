@@ -1,0 +1,103 @@
+.temp {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    /* background-color: rgb(76, 82, 82); */
+  }
+  
+  .icon {
+    height: 100px;
+    width: 100px;
+  }
+  
+  body {
+    background-image: url("/assets/img/Fondo.jpg");
+    display: grid;
+    place-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: large;
+  }
+  
+  main {
+    color: white;
+  }
+  
+  ::placeholder { color: rgba(255, 255, 255, 0.788); }
+  
+  .pp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #city {
+      text-align: center;
+    color: white;
+    border-radius: 28px;
+    background-color: rgba(70, 73, 73, 0.592);
+    box-shadow: 6px 5px 20px #93929298;
+    font-size: 20px;
+    width: 300px;
+    padding-bottom: 5px;
+    margin: 10px;
+  }
+  
+  button {
+    color: rgb(255, 255, 255);
+    border-radius: 28px;
+    background-color: rgba(10, 255, 255, 0.592);
+    box-shadow: 6px 5px 20px #93929298;
+    font-size: 27px;
+    width: 300px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  #weatherInfo {
+    background-color: rgba(130, 136, 136, 0.495);
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  @media (max-width: 870px) {
+  
+      .temp {
+          font-size: 20px;
+        }
+      #weatherInfo{
+          height: auto;
+          margin-top: 30px;
+      }
+  
+  
+      footer{
+          font-size: 20px;
+          height: auto;
+          text-align: center;
+      }
+  
+  }
