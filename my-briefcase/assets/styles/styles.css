@@ -1,207 +1,309 @@
-*::after, 
+*::after,
 *::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Estilos del Header y la barra de navegacion */
-#nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    /* background-color: rgb(59, 54, 54); */
-    background-color: #CECFC9;
-
-
+#nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: rgb(59, 54, 54); */
+  background-color: #cecfc9;
 }
 
-
-.list-nav{
-    display: flex;
-    flex-direction: row;  
-    text-decoration: none; 
-    list-style: none;
-    justify-content: center;
-    
+.list-nav {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  list-style: none;
+  justify-content: center;
 }
 
-.list-nav li{
-    transition: all 0.4s;
-    margin-left: 20px;
-    margin-right: 20px;
+.list-nav li {
+  transition: all 0.4s;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-.list-nav li:hover{
-    transform: scale(1.1);
-    
+.list-nav li:hover {
+  transform: scale(1.1);
 }
 
-.list-nav li a{
-    /* font-family: 'navfont'; */
-    font-size: 18px;
-    text-decoration: none;
-    /* transition: all 0.5s; */
-    text-align: center;
-    color: rgb(34, 83, 120);
-    font-weight: bold;
+.list-nav li a {
+  /* font-family: 'navfont'; */
+  font-size: 18px;
+  text-decoration: none;
+  /* transition: all 0.5s; */
+  text-align: center;
+  color: rgb(61, 65, 68);
+  font-weight: bold;
 }
 
-.list-nav li a:hover{
-    color: #ffffff;
-
+.list-nav li a:hover {
+  color: #ffffff;
 }
 
-.logo{
-    width: 110px;
-    height: 100px;
-    transition: all 0.3s;
+.logo {
+  width: 110px;
+  height: 105px;
+  transition: all 0.3s;
 }
 
-.logo:hover{
-    transform: scale(1.1);
+.logo:hover {
+  transform: scale(1.1);
 }
 
 .gothic-button {
-    color: #ffffff; /* Texto en blanco */
-    border: 2px solid rgb(34, 83, 120); /* Borde oscuro */
-    border-radius: 20px; /* Bordes redondeados */
-    padding: 10px 20px; /* Espaciado interior del botón */
-    text-align: center; /* Centrar el texto horizontalmente */
-    text-decoration: none; /* Quitar subrayado del enlace */
-    font-size: 15px; /* Tamaño de fuente */
-    font-weight: bold; /*Grosor de la fuente*/
-    background-color: rgb(34, 83, 120); /* Color de fondo ligeramente más claro en el hover */
+  color: #ffffff; /* Texto en blanco */
+  border: 2px solid #F2AA1F; /* Borde oscuro */
+  border-radius: 20px; /* Bordes redondeados */
+  padding: 10px 20px; /* Espaciado interior del botón */
+  text-align: center; /* Centrar el texto horizontalmente */
+  text-decoration: none; /* Quitar subrayado del enlace */
+  font-size: 15px; /* Tamaño de fuente */
+  font-weight: bold; /*Grosor de la fuente*/
+  background-color: #F2AA1F; /* Color de fondo ligeramente más claro en el hover */
 }
-  
-  /* Estilo cuando el cursor está sobre el botón */
-  .gothic-button:hover {
-      background-color: #ffffff; /* Color de fondo oscuro */
-      color: black;
-  }
 
+/* Estilo cuando el cursor está sobre el botón */
+.gothic-button:hover {
+  background-color: #ffffff; /* Color de fondo oscuro */
+  color: black;
+  border: 2px solid #ffffff; /* Borde oscuro */
+
+}
 
 /* Estilos de la Seccion IM */
 
-.section_Im{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #07212d;
-    overflow: hidden; /* Para ocultar la imagen que se desborda */
-
+.section_Im {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #0d1e26;
+  overflow: hidden; /* Para ocultar la imagen que se desborda */
+  box-shadow: 0px 5px 15px rgb(0, 0, 0); /* Agregar sombra en la parte inferior */
 }
-.content_profile{
-    display: flex;
-    justify-content: flex-start ;
-    height: 650px;
-    width: 500px;
-    /* background-color: #3c3939; */
+.content_profile {
+  display: flex;
+  justify-content: flex-start;
+  height: 650px;
+  width: 500px;
+  /* background-color: #3c3939; */
 }
 
 .content_profile .img_profile {
-    max-width: 100%;
-    transition: all 0.8s;
-    max-height: 100%;
-    padding-top: 70px;
-    filter: grayscale(100%); /* Aplica un filtro de blanco y negro al 100% */
+  max-width: 100%;
+  transition: all 0.8s;
+  max-height: 100%;
+  padding-top: 70px;
+  filter: grayscale(100%); /* Aplica un filtro de blanco y negro al 100% */
   opacity: 0.7; /* Ajusta la opacidad (valores entre 0 y 1) */
-
 }
 
-.content_profile_description{
-    transition: all 0.8s;
-    text-align: center;
-
+.content_profile_description {
+  transition: all 0.8s;
+  text-align: center;
 }
 
-.content_profile_description h1{
-    text-align: center;
-    color: white;
+.content_profile_description h1 {
+  text-align: center;
+  color: white;
 }
 
 @font-face {
-    font-family: 'name_h1';
-    src: url(/assets/fonts/EBGaramond-Bold.ttf);  /*cambiar diseño de fuente*/
+  font-family: "name_h1";
+  src: url(/assets/fonts/EBGaramond-Bold.ttf); /*cambiar diseño de fuente*/
 }
 
-.content_profile_description h1 b{
-    font-family: 'name_h1';
-    font-weight: bold;
-    font-size: 60px;
-    color: rgb(49, 108, 154) ;
-    text-align: center;
+.content_profile_description h1 b {
+  font-family: "name_h1";
+  font-weight: bold;
+  font-size: 60px;
+  color: #F2AA1F;
+  
+  text-align: center;
 }
 
-.content_profile_description h2{
-    color: white;
-
+.content_profile_description h2 {
+  color: white;
 }
 
+/* Estilos de la Seccion About */
 
+#Section-About{
+  background-color: #0d1e26;
+  overflow: hidden;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
 
-/* Estilos del Footer */
-
-footer{
+.content-about{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
     justify-content: center;
-    background-color: #CECFC9;
+    margin: 40px;
+    font-size: 20px;    
+}
+
+.content-skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Title-skills {
+  text-align: center;
+  color: #ffffff;
+}
+
+.content-svg-skills {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 250px;
+  background-color: #333333ac;
+  margin: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  transition: background-color 0.2s ease;
+}
+
+.content-svg-skills:hover{
+  background-color: #F2AA1F;
+  /* background-color: rgb(55, 131, 189); */
 
 }
 
-.ul_f{
-    display: flex;
+.content-svg-skills h3 {
+  font-size: 25px;
+  margin-top: 40px;
+  color: #ffffff;
 }
 
-.ul_f .li{
-    display: flex;
-    transition: all .6s ease;
-    justify-content: space-around;
-    margin-right: 20px;
+.svg {
+  max-width: 40%;
+  max-height: 40%;
 }
 
-.ul_f .li:hover{
-    transform: rotate(360deg);
+.span {
+  display: flex;
 }
 
-.ul_f .li i{
-    /* color: rgb(0, 0, 0); */
-    color: rgb(34, 83, 120);
+.span2{
+  height: 2px;
+  width: 500px;
+  padding: 2px;
+  margin: 10px 20px 0px 10px;
+  /* background-color: rgb(55, 131, 189); */
+  background-color: #F2AA1F;
 
-    font-size: 25px;
 }
 
+/* Estilos de la seccion Portafolio */
 
+#Section-portafolio{
+  background-color: #0d1e26;
+  overflow: hidden;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.Title-portafolio{
+  margin-top: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.content-portafolio{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px;
+
+}
+
+.content-img-portafolio{
+  height: 300px;
+  width: 300px;
+  width: calc(33.33% - 110px); /* 33.33% de ancho con margen entre elementos */
+  margin: 10px; /* Margen entre elementos */
+  /* background-color: #f2f2f2; */
+  /* padding: 10px; */
+  /* box-sizing: border-box; Incluye margen y relleno en el ancho */
+}
+.content-img-portafolio .img_p{
+  max-width: 100%;
+  max-height: 100%;
+}
 
 
 
 /* Estilos para el botón de scroll */
 .scroll-top-button {
-    display: none; /* Inicialmente oculto */
-    position: fixed; /* Fijo en la pantalla */
-    bottom: 20px; /* Distancia desde la parte inferior */
-    right: 20px; /* Distancia desde la derecha */
-    background-color: rgba(255, 255, 255, 0.7); /* Fondo blanco semi-transparente */
-    border: none;
-    border-radius: 50%; /* Hacerlo redondo */
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-  }
-  
-  .scroll-top-button i {
-    font-size: 24px;
-    line-height: 40px;
-    color: #333; /* Color del icono */
-  }
-  
-  .scroll-top-button:hover {
-    background-color: rgba(255, 255, 255, 0.9); /* Cambia el fondo en el hover */
-  }
-  
-  .scroll-top-button.active {
-    transform: scale(1.1); /* Cambia el tamaño al hacer clic */
-  }
-  
+  display: none; /* Inicialmente oculto */
+  position: fixed; /* Fijo en la pantalla */
+  bottom: 20px; /* Distancia desde la parte inferior */
+  right: 20px; /* Distancia desde la derecha */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); /* Fondo blanco semi-transparente */
+  border: none;
+  border-radius: 50%; /* Hacerlo redondo */
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.scroll-top-button i {
+  font-size: 24px;
+  line-height: 40px;
+  color: #333; /* Color del icono */
+}
+
+.scroll-top-button:hover {
+  background-color: rgba(255, 255, 255, 0.9); /* Cambia el fondo en el hover */
+}
+
+.scroll-top-button.active {
+  transform: scale(1.1); /* Cambia el tamaño al hacer clic */
+}
+
+/* Estilos del Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #cecfc9;
+}
+
+.ul_f {
+  display: flex;
+}
+
+.ul_f .li {
+  display: flex;
+  transition: all 0.6s ease;
+  justify-content: space-around;
+  margin-right: 20px;
+}
+
+.ul_f .li:hover {
+  transform: rotate(360deg);
+}
+
+.ul_f .li i {
+  /* color: rgb(0, 0, 0); */
+  color: #8e6616;
+  font-size: 25px;
+}
+
+
