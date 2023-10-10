@@ -10,7 +10,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* background-color: rgb(59, 54, 54); */
   background-color: #cecfc9;
 }
 
@@ -36,7 +35,6 @@
   /* font-family: 'navfont'; */
   font-size: 18px;
   text-decoration: none;
-  /* transition: all 0.5s; */
   text-align: center;
   color: rgb(61, 65, 68);
   font-weight: bold;
@@ -58,14 +56,14 @@
 
 .gothic-button {
   color: #ffffff; /* Texto en blanco */
-  border: 2px solid #F2AA1F; /* Borde oscuro */
+  border: 2px solid #f2aa1f; /* Borde oscuro */
   border-radius: 20px; /* Bordes redondeados */
   padding: 10px 20px; /* Espaciado interior del botón */
   text-align: center; /* Centrar el texto horizontalmente */
   text-decoration: none; /* Quitar subrayado del enlace */
   font-size: 15px; /* Tamaño de fuente */
   font-weight: bold; /*Grosor de la fuente*/
-  background-color: #F2AA1F; /* Color de fondo ligeramente más claro en el hover */
+  background-color: #f2aa1f; /* Color de fondo ligeramente más claro en el hover */
 }
 
 /* Estilo cuando el cursor está sobre el botón */
@@ -73,7 +71,6 @@
   background-color: #ffffff; /* Color de fondo oscuro */
   color: black;
   border: 2px solid #ffffff; /* Borde oscuro */
-
 }
 
 /* Estilos de la Seccion IM */
@@ -122,8 +119,8 @@
   font-family: "name_h1";
   font-weight: bold;
   font-size: 60px;
-  color: #F2AA1F;
-  
+  color: #f2aa1f;
+
   text-align: center;
 }
 
@@ -133,20 +130,23 @@
 
 /* Estilos de la Seccion About */
 
-#Section-About{
+#Section-About {
   background-color: #0d1e26;
   overflow: hidden;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-.content-about{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #ffffff;
-    justify-content: center;
-    margin: 40px;
-    font-size: 20px;    
+.content-about {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  justify-content: center;
+  margin: 40px;
+  font-size: 20px;
+}
+
+.Title-About {
+  margin: 20px 0px 40px 0px;
 }
 
 .content-skills {
@@ -174,10 +174,8 @@
   transition: background-color 0.2s ease;
 }
 
-.content-svg-skills:hover{
-  background-color: #F2AA1F;
-  /* background-color: rgb(55, 131, 189); */
-
+.content-svg-skills:hover {
+  background-color: #f2aa1f;
 }
 
 .content-svg-skills h3 {
@@ -195,55 +193,206 @@
   display: flex;
 }
 
-.span2{
+.span2 {
   height: 2px;
   width: 500px;
   padding: 2px;
   margin: 10px 20px 0px 10px;
-  /* background-color: rgb(55, 131, 189); */
-  background-color: #F2AA1F;
-
+  background-color: #f2aa1f;
 }
 
 /* Estilos de la seccion Portafolio */
 
-#Section-portafolio{
+#Section-Portafolio {
   background-color: #0d1e26;
   overflow: hidden;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-.Title-portafolio{
+.Title-portafolio {
   margin-top: 20px;
   text-align: center;
   color: #ffffff;
 }
 
-.content-portafolio{
-  display: flex;
+.content-portafolio {
+  display: grid;
+  grid-template-columns: auto auto auto;
   justify-content: center;
-  flex-wrap: wrap;
-  margin: 20px;
-
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-.content-img-portafolio{
-  height: 300px;
+.content-img-portafolio {
+  position: relative;
   width: 300px;
-  width: calc(33.33% - 110px); /* 33.33% de ancho con margen entre elementos */
-  margin: 10px; /* Margen entre elementos */
-  /* background-color: #f2f2f2; */
-  /* padding: 10px; */
-  /* box-sizing: border-box; Incluye margen y relleno en el ancho */
+  margin: 15px;
+  height: 300px;
 }
-.content-img-portafolio .img_p{
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(119, 115, 115, 0.273);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-img-portafolio:hover .overlay {
+  opacity: 1;
+}
+
+.project-description {
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.project-button {
+  background-color: #f2aa1f;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.project-button:hover {
+  background-color: #333333;
+}
+
+.img_portafolio {
   max-width: 100%;
   max-height: 100%;
 }
 
+/* Estilos para la Seccion de Experience */
+#Section-Experience {
+  background-color: #0d1e26;
+  overflow: hidden;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
 
+.Title-Experience {
+  margin: 20px 0px 70px 60px;
+  color: #ffffff;
+}
+
+.content-experience {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-experience-details {
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 15px;
+  align-items: flex-start;
+  position: relative; /* Para establecer una referencia de posición para la línea */
+}
+
+.content-info-experience {
+  margin-left: 30px;
+}
+
+.content-experience-date {
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  background-color: #f2aa1f;
+  height: 30px;
+  width: 70px;
+  margin: 0px 15px 10px 0px;
+}
+
+.content-experience-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-experience-circle p {
+  background-color: #f2aa1f;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px #ff8818;
+  z-index: 1;
+}
+
+.span3 {
+  margin: 40px 20px 0px 20px;
+  position: absolute; /* Hacemos que la línea tenga una posición absoluta */
+  height: 90%; /* Ocupa la altura completa del div */
+  width: 2px;
+  padding: 2px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+/* Estilos para la Seccion de Contact */
+
+#Section-Contact {
+  background-color: #0d1e26;
+  height: 300px;
+  overflow: hidden;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.Title-Contact {
+  color: #ffffff;
+  text-align: center;
+}
+
+.content-contact {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 30px; /* Espacio entre los divs */
+  text-align: center; /* Para centrar el contenido de los divs */
+  margin: 40px 0px 0px 0px;
+}
+
+.content-info-contact {
+  display: grid;
+  color: #ffffff;
+  background-color: #333333;
+  justify-self: center; 
+  width: 350px;
+  border-radius: 20px;
+}
+
+.content-info-contact:nth-child(3) {
+  grid-column: span 2; /* Hacer que ocupe dos columnas */
+  justify-self: center; /* Centra horizontalmente dentro de su espacio asignado */
+}
+
+.content-info-contact p{
+  color: #f2aa1f;
+  font-size: 20px;
+}
+
+.content-info-contact i{
+  font-size: 20px;
+}
 
 /* Estilos para el botón de scroll */
+
 .scroll-top-button {
   display: none; /* Inicialmente oculto */
   position: fixed; /* Fijo en la pantalla */
@@ -283,10 +432,14 @@ footer {
   display: flex;
   justify-content: center;
   background-color: #cecfc9;
+  height: 80px;
+  align-items: center;
+  align-content: center;
 }
 
 .ul_f {
   display: flex;
+
 }
 
 .ul_f .li {
@@ -305,5 +458,3 @@ footer {
   color: #8e6616;
   font-size: 25px;
 }
-
-

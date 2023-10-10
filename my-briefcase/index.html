@@ -1,147 +1,382 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
     <title>Practica 1</title>
-</head>
-<body class="body">
+  </head>
+  <body class="body">
     <header>
-        <nav id="nav">
-            <a href=""><img src="./assets/img/My-Logo.png" alt="Logo de la Pagina" class="logo"></a>
-            <ul class="list-nav">
-                <li><a href="#Section-About">About</a></li>
-                <li><a href="#Section-portafolio">Portfolio</a></li>
-                <li><a href="">Experience</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-            <a href="./clima.html">
-                <button class="gothic-button">How is the climate?</button>
-            </a>
-        </nav>
+      <nav id="nav">
+        <a href=""
+          ><img
+            src="./assets/img/My-Logo.png"
+            alt="Logo de la Pagina"
+            class="logo"
+        /></a>
+        <ul class="list-nav">
+          <li><a href="#Section-About">About</a></li>
+          <li><a href="#Section-Portafolio">Portfolio</a></li>
+          <li><a href="#Section-Experience">Experience</a></li>
+          <li><a href="#Section-Contact">Contact</a></li>
+        </ul>
+        <a href="./clima.html">
+          <button class="gothic-button">How is the climate?</button>
+        </a>
+      </nav>
     </header>
 
     <main class="main">
-       <section class="section_Im">
+      <section class="section_Im">
         <div class="content_profile">
-            <img src="./assets/img/Profile.png" alt="Mi Foto" class="img_profile">
+          <img
+            src="./assets/img/Profile.png"
+            alt="Mi Foto"
+            class="img_profile"
+          />
         </div>
         <div class="content_profile_description">
-            <h1>I&rsquo;m <b>Juan Sebastian Usuga </b></h1>
-            <h2>Frontend Web Developer</h2>
+          <h1>I&rsquo;m <b>Juan Sebastian Usuga </b></h1>
+          <h2>Frontend Web Developer</h2>
         </div>
-       </section>
+      </section>
 
-       <section id="Section-About">
+      <section id="Section-About">
         <div class="content-about">
-            <h2>About</h2>
-            <div class="span">
-                <span class="span2"></span>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, dolor velit voluptate delectus recusandae quidem ducimus placeat neque at, distinctio perspiciatis nisi itaque fuga odit suscipit, optio harum quis? Nisi.
-                Vitae, ipsam asperiores voluptatum, natus quidem distinctio ex illum autem harum nobis ullam nostrum debitis fuga explicabo dicta deserunt? Laudantium consectetur, obcaecati quod modi reprehenderit libero quos ipsam aut quasi.
-                Odit at fuga corrupti eaque deserunt. Quidem, ipsum. Eaque atque modi nisi aut voluptatum, excepturi eligendi sapiente quos praesentium consequuntur inventore, hic debitis, dolorum numquam. Ea laborum commodi optio amet.</p>
-            </div>
+          <h2 class="Title-About">About</h2>
+          <div class="span">
+            <span class="span2"></span>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis,
+              dolor velit voluptate delectus recusandae quidem ducimus placeat
+              neque at, distinctio perspiciatis nisi itaque fuga odit suscipit,
+              optio harum quis? Nisi. Vitae, ipsam asperiores voluptatum, natus
+              quidem distinctio ex illum autem harum nobis ullam nostrum debitis
+              fuga explicabo dicta deserunt? Laudantium consectetur, obcaecati
+              quod modi reprehenderit libero quos ipsam aut quasi. Odit at fuga
+              corrupti eaque deserunt. Quidem, ipsum. Eaque atque modi nisi aut
+              voluptatum, excepturi eligendi sapiente quos praesentium
+              consequuntur inventore, hic debitis, dolorum numquam. Ea laborum
+              commodi optio amet.
+            </p>
+          </div>
         </div>
         <h2 class="Title-skills">My Skills</h2>
         <div class="content-skills">
-            <div class="content-svg-skills">
-                <div class="cursor-tracker"></div>
-                <img src="/assets/icons/HTML.svg" alt="icon-HTML" class="svg">
-                <h3>Html</h3>
-            </div>
-            <div class="content-svg-skills">
-                <img src="/assets/icons/CSS.svg" alt="icon-CSS" class="svg">
-                <h3>CSS</h3>
-            </div>
-            <div class="content-svg-skills">
-                <img src="/assets/icons//Github-Dark.svg" alt="icon-GitHub" class="svg">
-                <h3>GitHub</h3>
-            </div>
-            <div class="content-svg-skills">
-                <img src="/assets/icons/Bootstrap.svg" alt="icon-Boostrap" class="svg">
-                <h3>Bootstrap</h3>
-            </div>
-            <div class="content-svg-skills">
-                <img src="/assets/icons/JavaScript.svg" alt="icon-JavaScript" class="svg">
-                <h3>JavaScript</h3>
-            </div>
-            <div class="content-svg-skills">
-                <img src="/assets/icons/Angular-Dark.svg" alt="icon-Angular" class="svg">
-                <h3>Angular</h3>
-            </div>
-            <div class="content-svg-skills">
-                <img src="/assets/icons/React-Dark.svg" alt="icon-React" class="svg">
-                <h3>React</h3>
-            </div>
+          <div class="content-svg-skills">
+            <div class="cursor-tracker"></div>
+            <img src="/assets/icons/HTML.svg" alt="icon-HTML" class="svg" />
+            <h3>Html</h3>
+          </div>
+          <div class="content-svg-skills">
+            <img src="/assets/icons/CSS.svg" alt="icon-CSS" class="svg" />
+            <h3>CSS</h3>
+          </div>
+          <div class="content-svg-skills">
+            <img
+              src="/assets/icons//Github-Dark.svg"
+              alt="icon-GitHub"
+              class="svg"
+            />
+            <h3>GitHub</h3>
+          </div>
+          <div class="content-svg-skills">
+            <img
+              src="/assets/icons/Bootstrap.svg"
+              alt="icon-Boostrap"
+              class="svg"
+            />
+            <h3>Bootstrap</h3>
+          </div>
+          <div class="content-svg-skills">
+            <img
+              src="/assets/icons/JavaScript.svg"
+              alt="icon-JavaScript"
+              class="svg"
+            />
+            <h3>JavaScript</h3>
+          </div>
+          <div class="content-svg-skills">
+            <img
+              src="/assets/icons/Angular-Dark.svg"
+              alt="icon-Angular"
+              class="svg"
+            />
+            <h3>Angular</h3>
+          </div>
+          <div class="content-svg-skills">
+            <img
+              src="/assets/icons/React-Dark.svg"
+              alt="icon-React"
+              class="svg"
+            />
+            <h3>React</h3>
+          </div>
         </div>
-       </section>
-       <Section id="Section-portafolio">
+      </section>
+      <section id="Section-Portafolio">
         <h2 class="Title-portafolio">Portafolio</h2>
         <div class="content-portafolio">
-            <div class="content-img-portafolio">
-                <img src="/assets/img/p-1.png" alt="imagen de un proyecto" class="img_p">
-                <div class="info"></div>
+          <div class="content-img-portafolio">
+            <a href=""
+              ><img
+                src="/assets/img/p-1.jpg"
+                alt="imagen de un proyecto"
+                class="img_portafolio"
+            /></a>
+            <div class="overlay">
+              <p class="project-description">Descripción del proyecto</p>
+              <a href="#" class="project-button">Ver más</a>
             </div>
-            <div class="content-img-portafolio">
-                <img src="/assets/img/p-2.png" alt="imagen de un proyecto" class="img_p">
-                <div class="info"></div>
+          </div>
+          <div class="content-img-portafolio">
+            <a href=""
+              ><img
+                src="/assets/img/p-2.png"
+                alt="imagen de un proyecto"
+                class="img_portafolio"
+            /></a>
+            <div class="overlay">
+              <p class="project-description">Descripción del proyecto</p>
+              <a href="#" class="project-button">Ver más</a>
             </div>
-            <div class="content-img-portafolio">
-                <img src="/assets/img/p-3.png" alt="imagen de un proyecto" class="img_p">
-                <div class="info"></div>
+          </div>
+          <div class="content-img-portafolio">
+            <a href=""
+              ><img
+                src="/assets/img/p-3.jpg"
+                alt="imagen de un proyecto"
+                class="img_portafolio"
+            /></a>
+            <div class="overlay">
+              <p class="project-description">Descripción del proyecto</p>
+              <a href="#" class="project-button">Ver más</a>
             </div>
-            <div class="content-img-portafolio">
-                <img src="/assets/img/p-4.png" alt="imagen de un proyecto" class="img_p">
-                <div class="info"></div>
+          </div>
+          <div class="content-img-portafolio">
+            <a href=""
+              ><img
+                src="/assets/img/p-4.png"
+                alt="imagen de un proyecto"
+                class="img_portafolio"
+            /></a>
+            <div class="overlay">
+              <p class="project-description">Descripción del proyecto</p>
+              <a href="#" class="project-button">Ver más</a>
             </div>
-            <div class="content-img-portafolio">
-                <img src="/assets/img/p-5.png" alt="imagen de un proyecto" class="img_p">
-                <div class="info"></div>
+          </div>
+          <div class="content-img-portafolio">
+            <a href=""
+              ><img
+                src="/assets/img/p-5.png"
+                alt="imagen de un proyecto"
+                class="img_portafolio"
+            /></a>
+            <div class="overlay">
+              <p class="project-description">Descripción del proyecto</p>
+              <a href="#" class="project-button">Ver más</a>
             </div>
-            <div class="content-img-portafolio">
-                <img src="/assets/img/p-1.png" alt="imagen de un proyecto" class="img_p">
-                <div class="info"></div>
+          </div>
+          <div class="content-img-portafolio">
+            <a href=""
+              ><img
+                src="/assets/img/p-6.jpg"
+                alt="imagen de un proyecto"
+                class="img_portafolio"
+            /></a>
+            <div class="overlay">
+              <p class="project-description">Descripción del proyecto</p>
+              <a href="#" class="project-button">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Section-Experience">
+        <h2 class="Title-Experience">Experience</h2>
+        <div class="content-experience">
+          <div class="content-experience-details">
+            <div class="content-experience-circle">
+              <div class="content-experience-date"><p>2020</p></div>
+              <p></p>
+              <span class="span3"></span>
+            </div>
+            <div class="content-info-experience">
+              <h3>Título de la Experiencia 1</h3>
+              <h5>Subtitulo de la Experiencia 1</h5>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+                at necessitatibus et id aliquam non provident corporis, omnis
+                eaque. Harum ullam nulla voluptate est accusantium amet optio
+                officiis maxime perspiciatis? Autem error voluptates placeat,
+                aperiam fugit ex itaque vitae iure fuga non incidunt ab
+                similique numquam laudantium doloremque dolorum? Excepturi
+                quibusdam, possimus illum qui cupiditate fugiat! Impedit libero
+                atque cupiditate? Exercitationem id nobis vero atque maxime.
+                Provident deleniti minima voluptas ex nam non incidunt minus,
+                eveniet sunt sed inventore eos quasi aut omnis numquam ratione
+                quaerat qui officia! Autem, dolorum? Molestias eligendi culpa
+                error libero blanditiis explicabo tempore tempora optio neque
+                fugit quidem temporibus quo accusantium, animi beatae voluptatem
+                minus reiciendis ipsum quibusdam esse quam quod architecto
+                deleniti. Molestiae, neque. Adipisci laudantium esse quis sequi
+                dicta dolore asperiores mollitia quia eveniet animi, id
+                molestiae cum reiciendis ab voluptatem, commodi laborum magni
+                voluptatibus sit iure! Ratione quas obcaecati molestiae animi
+                ex. Laudantium exercitationem quasi perferendis enim ut eos
+                labore repudiandae maxime, nobis, earum adipisci doloribus
+                itaque aliquid veniam! Assumenda porro quas quae commodi error,
+                praesentium in doloribus excepturi itaque ipsum nisi! Non
+                molestias sed quod praesentium? Consectetur saepe doloribus
+                laborum animi, qui tempore. Quaerat quibusdam excepturi labore
+                ipsa adipisci ab accusantium reprehenderit expedita voluptates
+                cupiditate, delectus repellendus dolor laboriosam ad mollitia.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+                at necessitatibus et id aliquam non provident corporis, omnis
+                eaque. Harum ullam nulla voluptate est accusantium amet optio
+                officiis maxime perspiciatis? Autem error voluptates placeat,
+                aperiam fugit ex itaque vitae iure fuga non incidunt ab
+                similique numquam laudantium doloremque dolorum? Excepturi
+                quibusdam, possimus illum qui cupiditate fugiat! Impedit libero
+                atque cupiditate? Exercitationem id nobis vero atque maxime.
+                Provident deleniti minima voluptas ex nam non incidunt minus,
+                eveniet sunt sed inventore eos quasi aut omnis numquam ratione
+                quaerat qui officia! Autem, dolorum? Molestias eligendi culpa
+                error libero blanditiis explicabo tempore tempora optio neque
+                fugit quidem temporibus quo accusantium, animi beatae voluptatem
+                minus reiciendis ipsum quibusdam esse quam quod architecto
+                deleniti. Molestiae, neque. Adipisci laudantium esse quis sequi
+                dicta dolore asperiores mollitia quia eveniet animi, id
+                molestiae cum reiciendis ab voluptatem, commodi laborum magni
+                voluptatibus sit iure! Ratione quas obcaecati molestiae animi
+                ex. Laudantium exercitationem quasi perferendis enim ut eos
+                labore repudiandae maxime, nobis, earum adipisci doloribus
+                itaque aliquid veniam! Assumenda porro quas quae commodi error,
+                praesentium in doloribus excepturi itaque ipsum nisi! Non
+                molestias sed quod praesentium? Consectetur saepe doloribus
+                laborum animi, qui tempore. Quaerat quibusdam excepturi labore
+                ipsa adipisci ab accusantium reprehenderit expedita voluptates
+                cupiditate, delectus repellendus dolor laboriosam ad mollitia.
+              </p>
+            </div>
+          </div>
+          <div class="content-experience-details">
+            <div class="content-experience-circle">
+              <div class="content-experience-date"><p>2023</p></div>
+              <p></p>
+              <span class="span3"></span>
+            </div>
+            <div class="content-info-experience">
+              <h3>Título de la Experiencia 1</h3>
+              <h5>Subtitulo de la Experiencia 1</h5>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+                at necessitatibus et id aliquam non provident corporis, omnis
+                eaque. Harum ullam nulla voluptate est accusantium amet optio
+                officiis maxime perspiciatis? Autem error voluptates placeat,
+                aperiam fugit ex itaque vitae iure fuga non incidunt ab
+                similique numquam laudantium doloremque dolorum? Excepturi
+                quibusdam, possimus illum qui cupiditate fugiat! Impedit libero
+                atque cupiditate? Exercitationem id nobis vero atque maxime.
+                Provident deleniti minima voluptas ex nam non incidunt minus,
+                eveniet sunt sed inventore eos quasi aut omnis numquam ratione
+                quaerat qui officia! Autem, dolorum? Molestias eligendi culpa
+                error libero blanditiis explicabo tempore tempora optio neque
+                fugit quidem temporibus quo accusantium, animi beatae voluptatem
+                minus reiciendis ipsum quibusdam esse quam quod architecto
+                deleniti. Molestiae, neque. Adipisci laudantium esse quis sequi
+                dicta dolore asperiores mollitia quia eveniet animi, id
+                molestiae cum reiciendis ab voluptatem, commodi laborum magni
+                voluptatibus sit iure! Ratione quas obcaecati molestiae animi
+                ex. Laudantium exercitationem quasi perferendis enim ut eos
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="Section-Contact">
+        <h2 class="Title-Contact">Contact Me</h2>
+        <div class="content-contact">
+            <div class="content-info-contact">
+                <i class="bi bi-envelope"></i>
+                <p>juanusugas18@gmail.com</p>
+            </div>
+            <div class="content-info-contact">
+                <i class="bi bi-telephone"></i>
+                <p>(+57)3147398347</p>
+            </div>
+            <div class="content-info-contact">
+                <i class="bi bi-geo-alt"></i>
+                <p>Medellín, Colombia</p>
             </div>
         </div>
-       </Section>
-       <Section id="Experience"></Section>
-       <section id="Contact"></section>
+      </section>
     </main>
-    
+
     <footer>
-        <section class="section_f">
-            <ul class="ul_f">
-                <li class="li">
-                    <a href="https://m.facebook.com/profile.php?eav=AfZieYIaVG1ZpkILCJDPYiTG6ROrfz7a5R8c6NKBuNTlpFtraFKWNNxC00Dz7jjxkTY&paipv=0"><i class="bi bi-facebook" target="_blank"></i></a>
-                </li>
-                <li class="li">
-                    <a href="https://www.instagram.com/sebas.12210/" target="_blank"><i class="bi bi-instagram"></i></a>
-                </li>
-                <li class="li">
-                    <a href="https://www.youtube.com/@Sebastian-si7kj/featured" target="_blank"><i class="bi bi-youtube"></i></a>
-                </li>
-                <li class="li">
-                    <a href="https://twitter.com/Sebas_0326?t=kSlhE_Syu8feTtclRAYHzw&s=09" target="_blank"><i class="bi bi-twitter"></i></a>
-                </li>
-                <li class="li">
-                    <a href="https://www.linkedin.com/in/juan-sebastian-usuga-velez-9657b8284/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                </li>
-                <li class="li">
-                    <a href="https://discord.gg/x4YuvYfg"><i class="bi bi-discord"target="_blank"></i></a>
-                </li>
-                <li class="li">
-                    <a href="https://www.tiktok.com/@s.ebastian._?lang=es" target="_blank"><i class="bi bi-whatsapp"></i></a>
-                </li>
-            </ul>
-        </section>
+      <section class="section_f">
+        <ul class="ul_f">
+          <li class="li">
+            <a
+              href="https://m.facebook.com/profile.php?eav=AfZieYIaVG1ZpkILCJDPYiTG6ROrfz7a5R8c6NKBuNTlpFtraFKWNNxC00Dz7jjxkTY&paipv=0"
+              ><i class="bi bi-facebook" target="_blank"></i
+            ></a>
+          </li>
+          <li class="li">
+            <a href="https://www.instagram.com/sebas.12210/" target="_blank"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </li>
+          <li class="li">
+            <a
+              href="https://www.youtube.com/@Sebastian-si7kj/featured"
+              target="_blank"
+              ><i class="bi bi-youtube"></i
+            ></a>
+          </li>
+          <li class="li">
+            <a
+              href="https://twitter.com/Sebas_0326?t=kSlhE_Syu8feTtclRAYHzw&s=09"
+              target="_blank"
+              ><i class="bi bi-twitter"></i
+            ></a>
+          </li>
+          <li class="li">
+            <a
+              href="https://www.linkedin.com/in/juan-sebastian-usuga-velez-9657b8284/"
+              target="_blank"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+          </li>
+          <li class="li">
+            <a href="https://discord.gg/x4YuvYfg"
+              ><i class="bi bi-discord" target="_blank"></i
+            ></a>
+          </li>
+          <li class="li">
+            <a
+              href="https://www.tiktok.com/@s.ebastian._?lang=es"
+              target="_blank"
+              ><i class="bi bi-whatsapp"></i
+            ></a>
+          </li>
+        </ul>
+      </section>
     </footer>
     <button id="scrollTopButton" class="scroll-top-button">
-        <i class="bi bi-arrow-up"></i>
-      </button>
+      <i class="bi bi-arrow-up"></i>
+    </button>
 
-      <script src="/assets/js/scrollButton.js"></script>
-</body>
+    <script src="/assets/js/scrollButton.js"></script>
+  </body>
 </html>
