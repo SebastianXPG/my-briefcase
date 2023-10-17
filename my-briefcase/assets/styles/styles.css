@@ -32,7 +32,6 @@
 }
 
 .list-nav li a {
-  /* font-family: 'navfont'; */
   font-size: 18px;
   text-decoration: none;
   text-align: center;
@@ -55,22 +54,22 @@
 }
 
 .gothic-button {
-  color: #ffffff; /* Texto en blanco */
-  border: 2px solid #f2aa1f; /* Borde oscuro */
-  border-radius: 20px; /* Bordes redondeados */
-  padding: 10px 20px; /* Espaciado interior del botón */
-  text-align: center; /* Centrar el texto horizontalmente */
-  text-decoration: none; /* Quitar subrayado del enlace */
-  font-size: 15px; /* Tamaño de fuente */
-  font-weight: bold; /*Grosor de la fuente*/
-  background-color: #f2aa1f; /* Color de fondo ligeramente más claro en el hover */
+  color: #ffffff; 
+  border: 2px solid #f2aa1f; 
+  border-radius: 20px; 
+  padding: 10px 20px; 
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px; 
+  font-weight: bold; 
+  background-color: #f2aa1f;
 }
 
 /* Estilo cuando el cursor está sobre el botón */
 .gothic-button:hover {
-  background-color: #ffffff; /* Color de fondo oscuro */
+  background-color: #ffffff;
   color: black;
-  border: 2px solid #ffffff; /* Borde oscuro */
+  border: 2px solid #ffffff; 
 }
 
 /* Estilos de la Seccion IM */
@@ -80,15 +79,14 @@
   align-items: center;
   justify-content: space-around;
   background-color: #0d1e26;
-  overflow: hidden; /* Para ocultar la imagen que se desborda */
-  box-shadow: 0px 5px 15px rgb(0, 0, 0); /* Agregar sombra en la parte inferior */
+  overflow: hidden;
+  box-shadow: 0px 5px 15px rgb(0, 0, 0);
 }
 .content_profile {
   display: flex;
   justify-content: flex-start;
   height: 650px;
   width: 500px;
-  /* background-color: #3c3939; */
 }
 
 .content_profile .img_profile {
@@ -97,8 +95,8 @@
   max-height: 100%;
   padding-top: 70px;
   filter: grayscale(100%); /* Aplica un filtro de blanco y negro al 100% */
-  opacity: 0.7; /* Ajusta la opacidad (valores entre 0 y 1) */
-}
+  opacity: 0.7;
+} 
 
 .content_profile_description {
   transition: all 0.8s;
@@ -252,7 +250,8 @@
 
 .project-description {
   color: #ffffff;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: bold;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -304,7 +303,7 @@
   justify-content: center;
   margin-bottom: 15px;
   align-items: flex-start;
-  position: relative; /* Para establecer una referencia de posición para la línea */
+  position: relative; 
 }
 
 .content-info-experience {
@@ -338,8 +337,8 @@
 
 .span3 {
   margin: 40px 20px 0px 20px;
-  position: absolute; /* Hacemos que la línea tenga una posición absoluta */
-  height: 90%; /* Ocupa la altura completa del div */
+  position: absolute; 
+  height: 90%; 
   width: 2px;
   padding: 2px;
   background-color: #ffffff;
@@ -361,25 +360,28 @@
 }
 
 .content-contact {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 30px; /* Espacio entre los divs */
-  text-align: center; /* Para centrar el contenido de los divs */
-  margin: 40px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content-father{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
 }
 
 .content-info-contact {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #ffffff;
   background-color: #333333;
-  justify-self: center; 
   width: 350px;
   border-radius: 20px;
-}
-
-.content-info-contact:nth-child(3) {
-  grid-column: span 2; /* Hacer que ocupe dos columnas */
-  justify-self: center; /* Centra horizontalmente dentro de su espacio asignado */
 }
 
 .content-info-contact p{
@@ -394,18 +396,13 @@
 /* Estilos para el botón de scroll */
 
 .scroll-top-button {
-  display: none; /* Inicialmente oculto */
-  position: fixed; /* Fijo en la pantalla */
-  bottom: 20px; /* Distancia desde la parte inferior */
-  right: 20px; /* Distancia desde la derecha */
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.7
-  ); /* Fondo blanco semi-transparente */
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  background-color: rgba(255,255,255,0.7); 
   border: none;
-  border-radius: 50%; /* Hacerlo redondo */
+  border-radius: 50%; 
   width: 40px;
   height: 40px;
   cursor: pointer;
@@ -415,15 +412,15 @@
 .scroll-top-button i {
   font-size: 24px;
   line-height: 40px;
-  color: #333; /* Color del icono */
+  color: #333; 
 }
 
 .scroll-top-button:hover {
-  background-color: rgba(255, 255, 255, 0.9); /* Cambia el fondo en el hover */
+  background-color: rgba(255, 255, 255, 0.9); 
 }
 
 .scroll-top-button.active {
-  transform: scale(1.1); /* Cambia el tamaño al hacer clic */
+  transform: scale(1.1); 
 }
 
 /* Estilos del Footer */
@@ -454,7 +451,6 @@ footer {
 }
 
 .ul_f .li i {
-  /* color: rgb(0, 0, 0); */
   color: #8e6616;
   font-size: 25px;
 }
